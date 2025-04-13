@@ -8,5 +8,6 @@ Vagrant.configure("2") do |config|
     sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
     sudo apt-get autoremove -y
     curl https://raw.githubusercontent.com/chubbyhippo/wsl-ubuntu/refs/heads/main/docker.sh | /usr/bin/env sh
+    sudo usermod -aG docker vagrant
   SHELL
 end
